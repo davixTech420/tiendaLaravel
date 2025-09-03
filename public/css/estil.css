@@ -1,0 +1,449 @@
+
+
+/*
+*
+ESTE CODIGO ES PARA LA VISTA DE REGISTRAR DEL ADMIN  Y LOGIN DEL CLIENTE
+***
+*
+*
+****
+*/
+.alert-fail,
+.alert-fail p {
+    border-radius: 20px;
+    text-align: center;
+}
+
+/*
+***ACA TERMINA
+***
+*
+*/
+
+
+
+/* iconos del swi.swiper-slide flotante*/
+.bi-house-fill {
+    font-size: 30px;
+}
+.bi-cart-plus {
+    font-size: 30px;
+}
+.bi-heart-fill {
+    font-size: 30px;
+}
+/*Menu flotante*/
+.nav-item:hover {
+    background: white;
+    border-radius: 50px;
+}
+/* 
+**
+**
+CODIGO PARA  LOS BOTONES DE LA PARTE SUPERIOR*
+**
+**
+/
+/*div del los botones*/
+.pad {
+    padding-inline: 10px;
+}
+.nav-link .badge {
+    position: absolute;
+    color: black;
+
+    transform: translate(-130%, 110%);
+}
+
+/*
+***
+**
+Codio para el carrusel
+**
+*
+*/
+.carousel-item {
+    transition: transform 0.5s ease-in-out;
+    transform-origin: center center;
+}
+
+.carousel-item.active {
+    transform: translateX(0);
+}
+
+.carousel-item.next {
+    transform: translateX(100%);
+    transform-origin: right center;
+    transition-delay: 0.2s;
+}
+
+.carousel-item.prev {
+    transform: translateX(-100%);
+    transform-origin: left center;
+    transition-delay: 0.2s;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    transition: opacity 0.5s ease;
+    opacity: 0.5;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-item img {
+    transition: transform 0.5s ease-in-out;
+    transform-origin: center center;
+    transform: scale(1);
+    transform: rotate(0deg);
+}
+.carousel-item.active img {
+    transform: scale(1.1);
+    transform: rotate(-5deg);
+}
+.carousel-item.next img {
+    transform: scale(0.9);
+    transform: rotate(5deg);
+}
+.carousel-item.prev img {
+    transform: scale(0.9);
+    transform: rotate(-5deg);
+}
+.carousel-item.active:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 36, 160, 0.7);
+    border-radius: 50%;
+    transform: scale(1.1);
+    transform-origin: center center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item.next:before {
+    transform: scale(0.9);
+}
+
+.carousel-item.prev:before {
+    transform: scale(0.9);
+}
+/*
+**
+***
+**
+****
+*
+/**/
+
+.add {
+    /*float:left;
+    margin-bottom: 50px;*/
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+
+
+/*
+*ESTE CODIGO ES PARA LA PARTE DONDE SE MUESTRA EL BOTON DE COMPRAR Y DE LISTA DE DESEOS EN LA VISTA DEL CLIENTE
+*/
+.infe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /*
+  */
+/*
+*ESTE CODIGO ES PARA EL ICONO DE FACEBOOK
+*/  
+
+.bi-facebook {
+    font-size: 35px;
+    color: blue;
+}
+.bi-facebook:hover{
+    color: blue;
+    text-shadow: 0 0 10px blue;
+}
+ #goo{
+    text-shadow:  0 0 10px red;
+ }
+
+ /*
+ *ICONO PARA QUITAR ELEMENTOS DE LA VISTA DE LA LISTA DE DESEOS
+ */
+ .bi-dash{
+    font-size: 80px;
+ }
+     /**/
+/**/
+/*
+*ESTE CODIGO ES PARA EL BOTON DE CORAZON
+*/
+.corazon {
+    font-size: 20px;
+    color: red;
+}
+.corazon:hover{
+    color: red;
+    text-shadow: 0 0 10px red;
+}
+/*
+*/
+
+
+/*
+*ESTE CODIGO ES PARA EL FOOTER DE LA VISTA DEL CLIEBNTE
+*/
+.final{
+    background-color: rgb(0, 0, 255,0.7);
+}
+.final-content{
+    background-color: rgb(0, 0, 0,0.8);
+}
+/*
+*/
+
+/* estilo para los input del login */
+/*este clase de paddi no deja que se peguen los input de lel login del cliente a lo ancho de la pantalla*/
+.paddi {
+    padding-inline: 45px;
+}
+
+/*
+*ESTILOS PARA EL SLIDER DE LOS PRODUCTOS
+*/
+
+.swiper {
+    width: 100%;
+    padding: 150px 0 50px 0;
+}
+.swiper-slide {
+    width: 200px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    text-align: center;
+}
+
+.swiper-slide:hover{
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(-10px);
+}
+
+
+.icons {
+    text-align: center;
+    transform: translate(10%, -30px);
+    display: flex;
+    width: max-content;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.icons h3{
+    color: rgb(0, 0, 0);
+}
+
+.product-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.product-img {
+    border-radius: 20px;
+    display: flex;
+    transform: translate(-5%,0%);
+    margin-top: -20px;
+    height: 200px;
+    width: 150px;
+    flex-basis: 80%;
+    text-align: center;
+}
+.product-img img {
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+}
+.zoomable-image  {
+    border-radius: 20px;
+    display: flex;
+    height: 250px;
+    width: 250px;
+}
+.btn-1 {
+    display: inline-block;
+    padding: 13px 55px;
+    border: 1px solid #ffb900;
+    border-radius: 25px;
+    color: #ffb900;
+    text-decoration: none;
+    margin-top: 50px;
+}
+/**/
+
+/*
+*ESTILOS PARA ACOMODAR LAS COLUMNAS DE LA PAGINA PRINCIPAL
+*/
+
+section {
+    background-color: #f8f9fa; /* Color de fondo */
+    padding: 50px 0; /* Espaciado interno superior e inferior */
+}
+
+/* Estilos para la fila de categorías */
+.py-5 .col-md-2 {
+    border-radius: 20px;
+    background-color: gray;
+    border-right: 1px solid #dee2e6; /* Línea divisoria vertical */
+    padding-right: 15px; /* Espaciado a la derecha */
+}
+
+.col-md-2 a {
+    display: block;
+    margin-bottom: 10px; /* Espaciado inferior entre categorías */
+    color: #495057; /* Color de texto */
+    text-decoration: none;
+}
+
+.col-md-2 a:hover {
+    color: #007bff; /* Color de texto al pasar el mouse */
+}
+
+/* Estilos para la sección de productos */
+
+
+.swiper-slide {
+    margin-right: 15px; /* Espaciado derecho entre productos */
+}
+
+.swiper-slide img {
+    max-width: 100%; /* Imágenes de productos con ancho máximo del contenedor padre */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.product-content {
+    margin-top: 1px; /* Espaciado superior entre contenido del producto */
+}
+
+.btn-1 {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color de texto del botón */
+    padding: 8px 15px; /* Espaciado interno del botón */
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.btn-1:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el mouse */
+}
+/*
+*/
+
+/*
+*ESTILOS PARA LA VISTA DE LA LISTA DE DESEOS DEL CLIENTE
+*/
+.fa-heart {
+    font-size: 6rem;
+    color: #ee2130;
+    animation-name: heart;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: center bottom;
+    position: relative;
+    display: inline-block;
+}
+
+@keyframes heart {
+    0%, 100% {
+        transform: scaleY(1) scaleX(1);
+        color: #ee2130;
+        opacity: 1;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: scaleY(1.15) scaleX(0.85);
+        color: #ff5b5b;
+        opacity: 0.9;
+    }
+    20%, 40%, 60%, 80% {
+        transform: scaleY(0.85) scaleX(1.15);
+        color: #ff8a8a;
+        opacity: 0.8;
+    }
+}
+
+.fa-heart::before,
+.fa-heart::after {
+    content: '\2764'; /* Código de escape Unicode para un corazón sólido */
+    font-size: 6rem;
+    color: #ee2130;
+    position: absolute;
+    display: block;
+    transform-origin: center bottom;
+    animation: inherit;
+}
+
+.fa-heart::before {
+    transform: rotate(45deg);
+}
+
+.fa-heart::after {
+    transform: rotate(-45deg);
+}
+/*
+
+
+
+
+/*
+*CODIGO PARA QUE SE QUEDE ESTATICO LOS LINK DE LA CATEGORIA EN LA VISTA PRINCIPAL
+*/
+@media (min-width: 992px) {
+    .sticky-sidebar {
+        position: sticky;
+        top: 20px; /* Ajusta la distancia superior según tus necesidades */
+    }
+}
+
+/* Estilos adicionales para dispositivos móviles */
+@media (max-width: 991px) {
+    .col-md-2 {
+        width: 100%; /* Ocupa el 100% del ancho en dispositivos móviles */
+
+     /* Elimina el relleno derecho en dispositivos móviles */
+    }
+
+    .sticky-sidebar {
+        position: relative; /* Vuelve a la posición normal en dispositivos móviles */
+        top: 0; /* Reinicia la posición superior */
+    }
+
+    .category-links {
+        display: flex; /* Utiliza flexbox para mostrar en línea */
+        justify-content: space-around; /* Espaciado uniforme entre enlaces */
+        flex-wrap: wrap; /* Envuelve los enlaces en dispositivos más pequeños */
+    }
+
+    .category-link {
+        flex: 0 0 48%; /* Establece el ancho deseado para cada enlace */
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        border-bottom: 1px solid #dce6f1;
+        text-decoration: none;
+        color: #007bff;
+    }
+}
